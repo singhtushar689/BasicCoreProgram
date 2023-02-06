@@ -11,7 +11,7 @@ namespace BasicCoreProgramming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1. FlipCoin \n 2. LeapYear \n 3. Exit");
+            Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \nExit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -25,6 +25,10 @@ namespace BasicCoreProgramming
                 case 2:
                     LeapYear leap = new LeapYear();
                     leap.Leap();
+                    break;
+                case 3:
+                    PowerOf2 power = new PowerOf2();
+                    power.Power();
                     break;
                 default:
                     break;
