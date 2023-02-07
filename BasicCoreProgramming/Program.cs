@@ -12,7 +12,7 @@ namespace BasicCoreProgramming
         static void Main(string[] args)
         {
             Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor " +
-                "\n6. EvenOdd Number \n Exit");
+                "\n6. EvenOdd Number \n7. Quotient&Remainder \n Exit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -42,6 +42,10 @@ namespace BasicCoreProgramming
                 case 6:
                     EvenOddNumber even = new EvenOddNumber();
                     even.Even();
+                    break;
+                case 7:
+                    QuotientRemainder quotient = new QuotientRemainder();
+                    quotient.FindRemainder();
                     break;
                 default:
                     break;
