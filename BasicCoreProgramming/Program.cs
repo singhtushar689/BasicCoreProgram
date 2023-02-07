@@ -11,7 +11,8 @@ namespace BasicCoreProgramming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor \n Exit");
+            Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor " +
+                "\n Exit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());

@@ -12,12 +12,16 @@ namespace BasicCoreProgramming
         {
             Console.WriteLine("Enter the Number");
             int number = Convert.ToInt32(Console.ReadLine());
-            int factor;
-            for (int i = 2; i < number; i++)
+            int count = 0;
+
+            for (int i = 2; i * i <= number; i++)
             {
-                if (number % i == 0)
-                    Console.WriteLine("{0} is divided by {1}", number, i);
+                if (number % i * i == 0)
+                    Console.WriteLine("PrimeFactor of number is {0}", i);
+                count++;
             }
+            if(count ==0)
+            Console.WriteLine("There is no a prime factor of {0}", number);
         }
     }
 }
