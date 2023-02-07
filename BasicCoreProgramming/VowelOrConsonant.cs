@@ -13,13 +13,19 @@ namespace BasicCoreProgramming
             Console.WriteLine("Enter the Character");
             char alpha = Convert.ToChar(Console.ReadLine());
 
-            if(alpha =='a'|| alpha == 'e'|| alpha =='i' || alpha=='o'||alpha =='u' ||
-                alpha =='A' || alpha == 'E'|| alpha == 'I' || alpha == 'O' || alpha == 'U')
+            if (alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'o' || alpha == 'u' ||
+                alpha == 'A' || alpha == 'E' || alpha == 'I' || alpha == 'O' || alpha == 'U')
             {
                 Console.WriteLine("It is an Vowel");
             }
+            else if (alpha > 'a' && alpha < 'z' || alpha > 'A' && alpha < 'Z')
+            { 
+                Console.WriteLine("It is Consonant"); 
+            }
             else
-                Console.WriteLine("It is Consonant");
+            {
+                Console.WriteLine("Invalid Entry..Try Again!!!");
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ namespace BasicCoreProgramming
         {
             Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor " +
                 "\n6. EvenOdd Number \n7. Quotient&Remainder \n8. SwapNumber " +
-                "\n9. VowelOrConsonant \n10. LargestNumberAmongThree \n Exit");
+                "\n9. LargestNumberAmongThree \n10. VowelOrConsonant  \n Exit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -53,12 +53,12 @@ namespace BasicCoreProgramming
                     swap.Swap();
                     break;
                 case 9:
-                    VowelOrConsonant vowel = new VowelOrConsonant();
-                    vowel.Vowel();
-                    break;
-                case 10:
                     LargestNumber largest = new LargestNumber();
                     largest.Largest();
+                    break;
+                case 10:                   
+                    VowelOrConsonant vowel = new VowelOrConsonant();
+                    vowel.Vowel();
                     break;
                 default:
                     break;
