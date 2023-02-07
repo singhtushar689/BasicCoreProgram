@@ -12,7 +12,7 @@ namespace BasicCoreProgramming
         static void Main(string[] args)
         {
             Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor " +
-                "\n6. EvenOdd Number \n7. Quotient&Remainder \n Exit");
+                "\n6. EvenOdd Number \n7. Quotient&Remainder \n8. SwapNumber \n Exit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -46,6 +46,10 @@ namespace BasicCoreProgramming
                 case 7:
                     QuotientRemainder quotient = new QuotientRemainder();
                     quotient.FindRemainder();
+                    break;
+                case 8:
+                    SwapNumber swap = new SwapNumber();
+                    swap.Swap();
                     break;
                 default:
                     break;
