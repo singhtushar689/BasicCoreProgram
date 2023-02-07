@@ -12,7 +12,7 @@ namespace BasicCoreProgramming
         static void Main(string[] args)
         {
             Console.WriteLine("1. FlipCoin \n2. LeapYear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factor " +
-                "\n Exit");
+                "\n6. EvenOdd Number \n Exit");
 
             Console.WriteLine("Enter the Option");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +38,10 @@ namespace BasicCoreProgramming
                 case 5:
                     Factor fact = new Factor();
                     fact.Factors();
+                    break;
+                case 6:
+                    EvenOddNumber even = new EvenOddNumber();
+                    even.Even();
                     break;
                 default:
                     break;
